@@ -1,3 +1,3 @@
-# Strapi application
+# Strapi API Backend for the KB
 
-A quick description of your strapi application
+
