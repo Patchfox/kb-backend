@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kb-articles",
+      "handler": "kb-article.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kb-articles/count",
+      "handler": "kb-article.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kb-articles/:id",
+      "handler": "kb-article.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kb-articles",
+      "handler": "kb-article.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kb-articles/:id",
+      "handler": "kb-article.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kb-articles/:id",
+      "handler": "kb-article.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

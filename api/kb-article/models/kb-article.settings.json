@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kb_articles",
+  "info": {
+    "name": "kb-Article"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "author": {
+      "via": "kb_articles",
+      "model": "kb-article"
+    },
+    "kb_articles": {
+      "via": "author",
+      "collection": "kb-article"
+    }
+  }
+}
