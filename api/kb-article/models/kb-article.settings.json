@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "kb_articles",
   "info": {
-    "name": "kb-Article"
+    "name": "kb-article"
   },
   "options": {
     "increments": true,
@@ -15,13 +15,16 @@
     "content": {
       "type": "richtext"
     },
-    "author": {
-      "via": "kb_articles",
-      "model": "kb-article"
+    "slug": {
+      "type": "string"
     },
-    "kb_articles": {
-      "via": "author",
-      "collection": "kb-article"
+    "tags": {
+      "collection": "tags",
+      "via": "kb_article"
+    },
+    "categories": {
+      "collection": "categories",
+      "via": "kb_article"
     }
   }
 }
