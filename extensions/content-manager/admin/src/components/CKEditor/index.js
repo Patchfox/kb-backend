@@ -39,17 +39,68 @@ const Editor = ({ onChange, name, value }) => {
             uploadUrl,
             headers,
              },
-            toolbar: [
-                'heading',
-                '|',
-                "bold",  "italic", "link", "fontsize", "fontcolor", "essentials",  "code", "codeBlock", 
-                '|',
-                'bulletedList', 'numberedList', 'alignment', 'mathtype', "link", "list", "mediaembed", "exportPdf", "pastefromoffice", 
-                '|',
-                'blockQuote', 'imageUpload', 
-               
+
+             templates: {
+              simple: {
+                label: 'Simple',
+                template: '<div class="simple"></div>',
+              },
+           
+            }, 
         
-            ],
+            image: {
+    
+              styles: [
+                  'alignLeft', 'alignCenter', 'alignRight'
+              ],
+  
+              // Configure the available image resize options.
+              resizeOptions: [
+                  {
+                      name: 'imageResize:original',
+                      label: 'Original',
+                      value: null
+                  },
+                  {
+                      name: 'imageResize:50',
+                      label: '50%',
+                      value: '50'
+                  },
+                  {
+                      name: 'imageResize:75',
+                      label: '75%',
+                      value: '75'
+                  }
+              ],
+              fontSize: {
+                options: [
+                    'tiny',
+                    'default',
+                    'big'
+                ]
+              },
+  
+              toolbar: [
+                  'imageStyle:alignLeft', 'imageStyle:alignCenter', 'imageStyle:alignRight',
+                  '|',
+                  'imageResize',
+                  '|',
+                  'imageTextAlternative'
+              ]
+            },
+            toolbar: {
+              items: [
+                'Heading',
+                '|',
+                "Bold",  "Italic", "fontSize", "FontColor",  "Code", "codeBlock", 
+                '|',
+                'BulletedList', 'NumberedList', 'Alignment', 'MathType', "MediaEmbed", "ExportPDF", 'ImageInsert', "ImageUpload",
+                '|',
+                'BlockQuote', 'Undo', 'Redo', 'Anchor', 
+               
+            ]},
+            language: "en"
+            
             }}
           
       />

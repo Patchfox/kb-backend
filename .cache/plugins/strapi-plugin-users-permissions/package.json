@@ -1,51 +1,15 @@
 {
-  "_args": [
-    [
-      "strapi-plugin-users-permissions@3.1.4",
-      "D:\\Eigene Dateien\\Dokumente\\Projekte\\kb_final\\backend"
-    ]
-  ],
-  "_from": "strapi-plugin-users-permissions@3.1.4",
-  "_id": "strapi-plugin-users-permissions@3.1.4",
-  "_inBundle": false,
-  "_integrity": "sha512-y9A+r9Aq/AiqXZb6o/dBJ8OfdUlfIojYyNM3g+7FNXXKKeWQ+sj2MWW0+oq0TE0AulrowHY9LCb8gwIwD6MwKw==",
-  "_location": "/strapi-plugin-users-permissions",
-  "_phantomChildren": {
-    "@babel/runtime": "7.11.2",
-    "@sindresorhus/slugify": "1.1.0",
-    "date-fns": "2.15.0",
-    "fn-name": "2.0.1",
-    "lodash": "4.17.19",
-    "lodash-es": "4.17.15",
-    "pino": "4.17.6",
-    "pluralize": "8.0.0",
-    "property-expr": "1.5.1",
-    "synchronous-promise": "2.0.13",
-    "toposort": "2.0.2"
+  "name": "strapi-plugin-users-permissions",
+  "version": "3.1.4",
+  "description": "Protect your API with a full-authentication process based on JWT",
+  "strapi": {
+    "name": "Roles & Permissions",
+    "icon": "users",
+    "description": "users-permissions.plugin.description",
+    "required": true
   },
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "strapi-plugin-users-permissions@3.1.4",
-    "name": "strapi-plugin-users-permissions",
-    "escapedName": "strapi-plugin-users-permissions",
-    "rawSpec": "3.1.4",
-    "saveSpec": null,
-    "fetchSpec": "3.1.4"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/strapi-plugin-users-permissions/-/strapi-plugin-users-permissions-3.1.4.tgz",
-  "_spec": "3.1.4",
-  "_where": "D:\\Eigene Dateien\\Dokumente\\Projekte\\kb_final\\backend",
-  "author": {
-    "name": "Strapi team",
-    "email": "hi@strapi.io",
-    "url": "http://strapi.io"
-  },
-  "bugs": {
-    "url": "https://github.com/strapi/strapi/issues"
+  "scripts": {
+    "test": "echo \"no tests yet\""
   },
   "dependencies": {
     "@purest/providers": "^1.0.1",
@@ -69,17 +33,14 @@
     "strapi-utils": "3.1.4",
     "uuid": "^3.1.0"
   },
-  "description": "Protect your API with a full-authentication process based on JWT",
   "devDependencies": {
     "koa": "^2.8.0"
   },
-  "engines": {
-    "node": ">=10.10.0",
-    "npm": ">=6.0.0"
+  "author": {
+    "name": "Strapi team",
+    "email": "hi@strapi.io",
+    "url": "http://strapi.io"
   },
-  "gitHead": "231263a3535658bab1e9492c6aaaed8692d62a53",
-  "homepage": "https://github.com/strapi/strapi#readme",
-  "license": "SEE LICENSE IN LICENSE",
   "maintainers": [
     {
       "name": "Strapi team",
@@ -87,19 +48,14 @@
       "url": "http://strapi.io"
     }
   ],
-  "name": "strapi-plugin-users-permissions",
   "repository": {
     "type": "git",
     "url": "git://github.com/strapi/strapi.git"
   },
-  "scripts": {
-    "test": "echo \"no tests yet\""
+  "engines": {
+    "node": ">=10.10.0",
+    "npm": ">=6.0.0"
   },
-  "strapi": {
-    "name": "Roles & Permissions",
-    "icon": "users",
-    "description": "users-permissions.plugin.description",
-    "required": true
-  },
-  "version": "3.1.4"
+  "license": "SEE LICENSE IN LICENSE",
+  "gitHead": "231263a3535658bab1e9492c6aaaed8692d62a53"
 }
